@@ -9,10 +9,14 @@ function App() {
     const mutate = text
       .split('')
       .map((char) =>
-        Math.random() > 0.5 ? char.toUpperCase() : char.toLowerCase()
-      )      
+        char === '\n'
+          ? '\n'
+          : Math.random() > 0.5
+          ? char.toUpperCase()
+          : char.toLowerCase()
+      )
       .join('');
-    setOutput(`${mutate}`);
+    setOutput(mutate);
   };
 
   const handleChange = (e) => {
@@ -26,8 +30,7 @@ function App() {
 
   return (
     <div className="container">
-      <input
-        type="text"
+      <textarea
         value={input}
         onChange={handleChange}
         placeholder="Enter text"
