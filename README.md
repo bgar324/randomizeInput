@@ -1,8 +1,4 @@
-# React + Vite
+## provide input and it will output with random upper and lower case letters 
+for example blah blah blah -> Blah bLah BLAH  
+![image](https://github.com/user-attachments/assets/8167f2a3-3b70-4d7c-9888-92bd5b099685)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
